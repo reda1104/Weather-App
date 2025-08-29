@@ -39,6 +39,12 @@ class _WeatherScreenState extends State<WeatherScreen> {
     }
   }
 
+  @override
+  void initState() {
+    super.initState();
+    _getWeatherByLocation(context);
+  }
+
   Widget _buildWeatherAnimation(String condition) {
     if (condition.toLowerCase().contains("cloud")) {
       return Lottie.asset("assets/animations/cloudy.json", height: 150);
@@ -61,10 +67,9 @@ class _WeatherScreenState extends State<WeatherScreen> {
       ),
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color(0xFF2193b0), Color(0xFF6dd5ed)],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+          image: DecorationImage(
+            image: AssetImage("assets/images/weather_bg.jpg"),
+            fit: BoxFit.cover,
           ),
         ),
         child: Padding(
@@ -121,7 +126,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                 onPressed: () => _getWeatherByLocation(context),
                 icon: const Icon(Icons.my_location, color: Colors.white),
                 label: const Text(
-                  "My Location",
+                  "Refresh Location",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -167,7 +172,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                               ),
                             ),
                             Text(
-                              "${state.weather.temperature}°C",
+                              "${state.weather.temperature.round()}°C",
                               style: GoogleFonts.poppins(
                                 fontSize: 64,
                                 fontWeight: FontWeight.w600,
@@ -187,7 +192,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                               children: [
                                 _buildInfoTile(
                                   "💧 Humidity",
-                                  "${state.weather.humidity}%",
+                                  "${state.weather.humidity.round()}%",
                                 ),
                                 const SizedBox(width: 16),
                                 _buildInfoTile(
