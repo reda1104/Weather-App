@@ -14,11 +14,11 @@ A beautiful Flutter application that provides real-time weather information for 
 
 ## Screenshots
 
-<img width="1080" height="2400" alt="Screenshot_1756514350" src="https://github.com/user-attachments/assets/ea0843e2-7fa3-491c-a783-47ac9c9ddf22" />
+<img width="400" height="700" alt="Screenshot_1756514350" src="https://github.com/user-attachments/assets/ea0843e2-7fa3-491c-a783-47ac9c9ddf22" />
 
-<img width="1080" height="2400" alt="Screenshot_1756514394" src="https://github.com/user-attachments/assets/f090c7ce-9fd5-43b4-8c7e-0968ee7a2275" />
+<img width="400" height="700" alt="Screenshot_1756514394" src="https://github.com/user-attachments/assets/f090c7ce-9fd5-43b4-8c7e-0968ee7a2275" />
 
-<img width="1080" height="2400" alt="Screenshot_1756514407" src="https://github.com/user-attachments/assets/92a07cdc-6c32-4e36-992d-52292ef24144" />
+<img width="400" height="700" alt="Screenshot_1756514407" src="https://github.com/user-attachments/assets/92a07cdc-6c32-4e36-992d-52292ef24144" />
 
 
 
