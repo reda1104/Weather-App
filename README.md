@@ -26,20 +26,9 @@ A beautiful Flutter application that provides real-time weather information for 
 
 ### Prerequisites
 
-- [Flutter SDK](https://flutter.dev/docs/get-started/install)
 - An API key from [OpenWeatherMap](https://openweathermap.org/api)
 
-### Project Structure
 
-main.dart – App entry point and dependency injection.
-weather_screen.dart – Main UI and user interaction.
-weather_bloc.dart – BLoC for weather state management.
-weather_repository.dart – Repository pattern for data access.
-weather_services.dart – API integration and location services.
-assets – Lottie animations and background images.
-Dependencies
-flutter_bloc
-geolocator
 http
 lottie
 google_fonts
